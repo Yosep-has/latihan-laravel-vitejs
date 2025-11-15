@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link, usePage } from "@inertiajs/react";
 import { Button } from "@/components/ui/button";
@@ -18,9 +17,15 @@ export default function AppLayout({ children }) {
                                 {nama_lengkap}
                             </Link>
                         </div>
-                        <Button variant="outline" size="sm">
-                            Login
-                        </Button>
+                        
+                        {/* --- PERBAIKAN DI SINI --- */}
+                        <Link href="/login">
+                            <Button variant="outline" size="sm">
+                                Login
+                            </Button>
+                        </Link>
+                        {/* --- AKHIR PERBAIKAN --- */}
+
                     </div>
                 </div>
             </nav>
